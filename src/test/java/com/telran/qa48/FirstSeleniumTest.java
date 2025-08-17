@@ -13,7 +13,7 @@ public class FirstSeleniumTest {
     WebDriver driver;
 
  //   before - setUp
-    
+
 
     @BeforeMethod
     public void setup() {
