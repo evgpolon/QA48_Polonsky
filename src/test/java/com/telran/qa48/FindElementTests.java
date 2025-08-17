@@ -31,6 +31,8 @@ public class FindElementTests {
 
     @Test
     public void findElementByTagName(){
+
+        System.out.println("Test name: findElementByTagName");
         WebElement element = driver.findElement(By.tagName("h1"));
         System.out.println("tagName h1 is: " + element.getText());
 
@@ -40,11 +42,15 @@ public class FindElementTests {
 
     @Test
     public void findElementBySimpleLocators(){
+        System.out.println("Test name: findElementBySimpleLocators");
+        //driver.findElement(By.id("root"));
         if (driver.findElement(By.id("root")).isDisplayed()) {
-            System.out.println("id was founded");
+            System.out.println("id was found");
         }
-        driver.findElement(By.className("mobile-header"));
-
+       // driver.findElement(By.className("mobile-header"));
+        if (driver.findElement(By.className("mobile-header")).isDisplayed()) {
+            System.out.println("class was found");
+        }
     }
 
 }
