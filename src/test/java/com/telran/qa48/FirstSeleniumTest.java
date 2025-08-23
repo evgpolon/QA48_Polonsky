@@ -44,13 +44,12 @@ public class FirstSeleniumTest {
 
  //    after - tearDown
 
-@AfterMethod(enabled = true)
+@AfterMethod
 //enabled = true по дефолту
     public void tearDown() {
        // driver.quit(); - закрывает все вкладки
     driver.close(); // закрывает текущую вкладку
 }
-
 
 
 }
